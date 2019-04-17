@@ -1,0 +1,14 @@
+  <html>
+  <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>login</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div>
+          <img [src]="(featuredPhotoStream | async)?.url1" alt="login page" width="500px" height="500px">
+      <button (click)="login()" class="text"><i class="fa fa-google" style="font-size:25px;color:red"></i>Login with Google</button>
+      <p class="text1">Welcome To Oshop!</p>
+       </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.text{ 
+    position: relative;
+    border-radius: 10px;
+    margin-left:500px;
+    margin-top:-200px;
+    text-align: center;
+    margin-bottom: -500px;
+    font-size: 15px;
+    width: 200px;
+    height:50px;
+    font-family: cursive;
+    font-weight: 1000;
+    background-color: black;
+    color:white;
+    border: 2px red solid;
+}
+.text1{
+        position:absolute;
+        font-family: cursive;
+        font-weight: 500;
+        margin-left:450px;
+        margin-top: -350px;
+       font-size: 40px;
+     
+}
+
+img{
+    border-radius: 50px;
+    margin-left: 350px;
+    opacity: 1;
+    margin-top:-20px;
+    border:5px red solid;
+}
