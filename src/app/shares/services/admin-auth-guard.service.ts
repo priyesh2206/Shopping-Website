@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { CanActivate } from '@angular/router/src/utils/preactivation';
-import { AuthService } from './auth.service';
-import { UserService } from './user.service';
+
 
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs';
+import { AuthService } from './auth.service';
+import { UserService } from './user.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class AdminAuthGuardService implements CanActivate{
   path: import("@angular/router").ActivatedRouteSnapshot[];

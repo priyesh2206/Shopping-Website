@@ -1,9 +1,11 @@
 <div *ngIf="product.title" class="card">
-  <img *ngIf="product.imageUrl" height="200" width="50" class="card-img-top" [src]="product.imageUrl" alt="{{ product.title }}">
+    <a [routerLink]="['/products/products/details/', product.$key]" data-toggle="tooltip" data-placement="right" title="Click to Shop" >
+  <img *ngIf="product.imageUrl" height="270" width="40" class="card-img-top" [src]="product.imageUrl" alt="{{ product.title }}">
+  </a> 
   <div class="card-body">
     <h5 class="card-title">{{ product.title }}</h5>
-    <p class="card-text">{{ product.price | currency: 'USD': true}}</p>
-  </div>
+    <p class="card-text">{{ product.price | currency: "&#8377;": true}}</p>
+  </div> 
   <div *ngIf="showActions && shoppingCart" class="card-footer">
     <button  
       *ngIf="shoppingCart.getQuantity(product) === 0; else updateQuantity "
@@ -11,7 +13,6 @@
       class="btn btn-secondary btn-block">Add to Cart</button>
       <ng-template #updateQuantity>
         <product-quantity [product]="product" [shopping-cart]="shoppingCart"></product-quantity>
-        
-      </ng-template>
+      </ng-template> 
   </div> 
 </div> 
